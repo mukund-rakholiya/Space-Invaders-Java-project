@@ -9,7 +9,7 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
         int x, y;
         int height, width;
         Image img;
-        boolean isAlive = true; //only used for aliens
+        boolean isAlive = true; //only used for aliens 
         boolean used = false; // only used for bullets
   
         public Block(int x, int y, int width, int height, Image img) {
