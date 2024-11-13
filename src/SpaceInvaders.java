@@ -20,7 +20,7 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
             this.img = img;
         }
     }
-
+  
     //board
     int tileSize = 32;
     int rows = 16;
