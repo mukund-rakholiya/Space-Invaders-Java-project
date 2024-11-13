@@ -5,7 +5,7 @@ import java.util.Random;
 import javax.swing.*;    
   
 public class SpaceInvaders extends JPanel implements ActionListener, KeyListener {
-    class Block {
+    class Block {. 
         int x, y;
         int height, width;
         Image img;
