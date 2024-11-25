@@ -3,13 +3,13 @@
 ## Overview
 This project is a Space Invaders Game built using Java Swing. The game challenges players to defend their spaceship by shooting down rows of advancing aliens. It features dynamic gameplay, increasing difficulty, and a scoring system.
 
-## Features
+## 📜 Features
 - Classic Gameplay: Control your ship to shoot down aliens while avoiding their descent.
 - Dynamic Difficulty: The game introduces more aliens as levels progress.
 - Scoring System: Earn points for each alien defeated.
 - Restartable: Automatically resets after a game over.
 
-## Project Structure
+## 🚀 Project Structure
 ```[]
 Space Invaders/
 ├── Images/               # Contains all graphics images for the game
@@ -17,7 +17,7 @@ Space Invaders/
 ├── SpaceInvaders.java    # Core game logic and rendering
 ```
 
-## How to Play
+## 🌟 How to Play
 1. Movement:
 - Use the Left Arrow (←) key to move the spaceship left.
 - Use the Right Arrow (→) key to move the spaceship right.
@@ -38,11 +38,11 @@ Move Left	| Left Arrow
 Move Right |	Right Arrow
 Shoot	| Space Bar
 
-## Setup and Run Instructions
+## ⚙️ Setup and Run Instructions
 Prerequisites
 - Java Development Kit (JDK) installed (version 8 or higher).
 
-## Steps to Run
+## 💡Steps to Run
 1. Clone the Repository:
 ```bash[]
 git clone https://github.com/your-username/space-invaders.git
@@ -66,7 +66,7 @@ javac Main.java
 java Main
 ```
 
-## Game Logic
+## 🧠 Game Logic
 1. Spaceship
 - Represented by a block object (Block class).
 - Can move left or right within the game board boundaries.
@@ -90,13 +90,13 @@ java Main
 5. Game Over
 - The game ends when any alien reaches the spaceship's row.
 
-## Additional Notes
+## 📒 Additional Notes
 - Customization:
   - Modify tileSize, rows, or columns in Main.java to adjust board dimensions.
   - Adjust alienVelocityX or bulletsVelocityY in SpaceInvaders.java to change gameplay speed.
 - Restart:
   - Press any key to restart the game after a Game Over.
 
-## License
+## 📄 License
 This project is licensed under the MIT License.
 
