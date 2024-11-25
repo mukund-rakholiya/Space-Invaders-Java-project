@@ -1,41 +1,102 @@
-SPACE INVADERS - Java project
+# SPACE INVADERS - Java project
 
-Welcome to my Space Invaders game project! This is a classic arcade game where you control a spaceship and must destroy waves of aliens before they reach the bottom of the screen. The game is developed in Java using Swing for the user interface.
+## Overview
+This project is a Space Invaders Game built using Java Swing. The game challenges players to defend their spaceship by shooting down rows of advancing aliens. It features dynamic gameplay, increasing difficulty, and a scoring system.
 
-#Features:
+## Features
+- Classic Gameplay: Control your ship to shoot down aliens while avoiding their descent.
+- Dynamic Difficulty: The game introduces more aliens as levels progress.
+- Scoring System: Earn points for each alien defeated.
+- Restartable: Automatically resets after a game over.
 
-* Classic Gameplay: Move your spaceship left and right to shoot aliens.
-* Multiple Alien Types: Includes different types of aliens with various images.
-* Increasing Difficulty: Levels get harder as you progress, with more aliens appearing in each level.
-* Score Tracking: Keep track of your score and aim for a high score!
-* Game Over Detection: The game ends when an alien reaches the bottom.
+## Project Structure
+```[]
+Space Invaders/
+├── Images/               # Contains all graphics images for the game
+├── Main.java             # Entry point of the game
+├── SpaceInvaders.java    # Core game logic and rendering
+```
 
-#Getting Started:
+## How to Play
+1. Movement:
+- Use the Left Arrow (←) key to move the spaceship left.
+- Use the Right Arrow (→) key to move the spaceship right.
 
-*Prerequisites
-- Java Development Kit (JDK) installed on your machine.
-- An IDE or text editor for Java development (e.g., IntelliJ IDEA, Eclipse, NetBeans).
+2. Shooting:
+- Press the Space Bar to shoot bullets and destroy aliens.
 
-#Running the Game:
-* Clone the repository:
-- Copy code clone link
-- Open the project in your IDE.
-- Navigate to the Main.java file.
-- Run the Main class to start the game.
+3. Goal:
+- Destroy all aliens before they reach your spaceship.
+- Score points for each alien eliminated.
 
-#Code Structure:
+4. Game Over:
+- The game ends if the aliens reach your ship.
 
-- Main.java: The main class that initializes the game window and starts the game.
-- SpaceInvaders.java: The core game logic, including rendering, user input handling, and game updates.
+Action | Key
+--- | ---
+Move Left	| Left Arrow
+Move Right |	Right Arrow
+Shoot	| Space Bar
 
-#Controls:
+## Setup and Run Instructions
+Prerequisites
+- Java Development Kit (JDK) installed (version 8 or higher).
 
-- Left Arrow Key: Move the spaceship left.
-- Right Arrow Key: Move the spaceship right.
-- Space Bar: Shoot bullets.
+## Steps to Run
+1. Clone the Repository:
+```bash[]
+git clone https://github.com/your-username/space-invaders.git
+cd space-invaders
+```
+2. Place Images:
+- Add the following images to the Images/ folder:
+- `alien.png`
+- `alien_cyan.png`
+- `alien_yellow.png`
+- `alien_magenta.png`
+- `ship.png`
 
-#Acknowledgements:
+3. Compile and Run:
+```[]bash
+javac Main.java
+```
 
-- Inspired by the classic Space Invaders game.
-- Java Swing for the GUI components.
-- Feel free to contribute to this project by submitting issues or pull requests. Enjoy the game!
+4. Run:
+```[]bash
+java Main
+```
+
+## Game Logic
+1. Spaceship
+- Represented by a block object (Block class).
+- Can move left or right within the game board boundaries.
+- Fires bullets upwards to destroy aliens.
+
+2. Aliens
+- Arranged in rows and columns at the start of each level.
+- Move horizontally, changing direction when hitting the screen edge.
+- Move one row down whenever the direction changes.
+- Increase in number as levels progress.
+
+3. Bullets
+- Fired from the spaceship's position.
+- Travel vertically upwards.
+- Destroy aliens on collision.
+
+4. Score and Levels
+- Players earn points for each alien destroyed.
+- Next levels spawn more aliens with increased difficulty.
+
+5. Game Over
+- The game ends when any alien reaches the spaceship's row.
+
+## Additional Notes
+- Customization:
+  - Modify tileSize, rows, or columns in Main.java to adjust board dimensions.
+  - Adjust alienVelocityX or bulletsVelocityY in SpaceInvaders.java to change gameplay speed.
+- Restart:
+  - Press any key to restart the game after a Game Over.
+
+## License
+This project is licensed under the MIT License.
+
